@@ -58,10 +58,10 @@
 }
 
 - (void)registerStatuses{
-//	[adium.statusController registerStatus:STATUS_NAME_AVAILABLE
-//						   withDescription:[adium.statusController localizedDescriptionForCoreStatusName:STATUS_NAME_AVAILABLE]
-//									ofType:AIAvailableStatusType
-//								forService:self];
+	[adium.statusController registerStatus:STATUS_NAME_AVAILABLE
+						   withDescription:[adium.statusController localizedDescriptionForCoreStatusName:STATUS_NAME_AVAILABLE]
+									ofType:AIAvailableStatusType
+								forService:self];
 	
 	[adium.statusController registerStatus:STATUS_NAME_AWAY
 						   withDescription:[adium.statusController localizedDescriptionForCoreStatusName:STATUS_NAME_AWAY]
@@ -77,6 +77,25 @@
 						   withDescription:[adium.statusController localizedDescriptionForCoreStatusName:STATUS_NAME_BUSY]
 									ofType:AIAwayStatusType
 								forService:self];
+}
+
+- (NSImage *)defaultServiceIconOfType:(AIServiceIconType)iconType
+{
+	if (iconType == AIServiceIconLarge) {
+		return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"large"]] autorelease];
+	}
+	
+	return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"small"]] autorelease];
+}
+
+- (NSString *)pathForDefaultServiceIconOfType:(AIServiceIconType)iconType
+{
+	
+	if (iconType == AIServiceIconLarge) {
+		return [[NSBundle bundleForClass:[self class]] pathForImageResource:@"large"];
+	}
+	
+	return [[NSBundle bundleForClass:[self class]] pathForImageResource:@"small"];
 }
 
 @end
