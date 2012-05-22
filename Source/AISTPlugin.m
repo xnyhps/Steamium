@@ -8,12 +8,18 @@
 
 #import "AISTPlugin.h"
 #import <Adium/ESDebugAILog.h>
+#import "AISTService.h"
+#import "libsteam.h"
+
+extern void purple_init_steam_plugin();
 
 @implementation AISTPlugin
 
 - (void)installPlugin
 {
 	AILogWithSignature(@"Loaded");
+	purple_init_steam_plugin();
+	[AISTService registerService];
 }
 
 - (void)uninstallPlugin

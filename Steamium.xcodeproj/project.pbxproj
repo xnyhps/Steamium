@@ -15,6 +15,9 @@
 		76411685156BD031007DC4FD /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411684156BD031007DC4FD /* libglib.framework */; };
 		76411687156BD0ED007DC4FD /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411686156BD0ED007DC4FD /* libintl.framework */; };
 		76411692156BD468007DC4FD /* AISTPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76411691156BD468007DC4FD /* AISTPlugin.m */; };
+		764116A2156BD716007DC4FD /* AISTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 764116A1156BD716007DC4FD /* AISTService.m */; };
+		764116A5156BD803007DC4FD /* AISTSteamAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 764116A4156BD803007DC4FD /* AISTSteamAccount.m */; };
+		764116A7156BD941007DC4FD /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764116A6156BD941007DC4FD /* AdiumLibpurple.framework */; };
 		76848A88156BCDF1006D1E50 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76848A87156BCDF1006D1E50 /* Cocoa.framework */; };
 		76848A92156BCDF1006D1E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76848A90156BCDF1006D1E50 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -33,6 +36,11 @@
 		76411686156BD0ED007DC4FD /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = ../adium3/Frameworks/libintl.framework; sourceTree = "<group>"; };
 		76411690156BD468007DC4FD /* AISTPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AISTPlugin.h; path = Source/AISTPlugin.h; sourceTree = SOURCE_ROOT; };
 		76411691156BD468007DC4FD /* AISTPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AISTPlugin.m; path = Source/AISTPlugin.m; sourceTree = SOURCE_ROOT; };
+		764116A0156BD716007DC4FD /* AISTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AISTService.h; path = Source/AISTService.h; sourceTree = SOURCE_ROOT; };
+		764116A1156BD716007DC4FD /* AISTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AISTService.m; path = Source/AISTService.m; sourceTree = SOURCE_ROOT; };
+		764116A3156BD803007DC4FD /* AISTSteamAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AISTSteamAccount.h; path = Source/AISTSteamAccount.h; sourceTree = SOURCE_ROOT; };
+		764116A4156BD803007DC4FD /* AISTSteamAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AISTSteamAccount.m; path = Source/AISTSteamAccount.m; sourceTree = SOURCE_ROOT; };
+		764116A6156BD941007DC4FD /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = ../adium3/build/Debug/AdiumLibpurple.framework; sourceTree = "<group>"; };
 		76848A84156BCDF1006D1E50 /* Steamium.adiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Steamium.adiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		76848A87156BCDF1006D1E50 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76848A8A156BCDF1006D1E50 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -54,6 +62,7 @@
 				76411678156BCFFE007DC4FD /* libjson-glib.framework in Frameworks */,
 				76411685156BD031007DC4FD /* libglib.framework in Frameworks */,
 				76411687156BD0ED007DC4FD /* libintl.framework in Frameworks */,
+				764116A7156BD941007DC4FD /* AdiumLibpurple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 		76848A86156BCDF1006D1E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				764116A6156BD941007DC4FD /* AdiumLibpurple.framework */,
 				76411686156BD0ED007DC4FD /* libintl.framework */,
 				76411684156BD031007DC4FD /* libglib.framework */,
 				76411677156BCFFE007DC4FD /* libjson-glib.framework */,
@@ -130,6 +140,10 @@
 				76848A8E156BCDF1006D1E50 /* Supporting Files */,
 				76411690156BD468007DC4FD /* AISTPlugin.h */,
 				76411691156BD468007DC4FD /* AISTPlugin.m */,
+				764116A0156BD716007DC4FD /* AISTService.h */,
+				764116A1156BD716007DC4FD /* AISTService.m */,
+				764116A3156BD803007DC4FD /* AISTSteamAccount.h */,
+				764116A4156BD803007DC4FD /* AISTSteamAccount.m */,
 			);
 			path = Steamium;
 			sourceTree = "<group>";
@@ -208,6 +222,8 @@
 				76411682156BD01D007DC4FD /* libsteam.c in Sources */,
 				76411683156BD01D007DC4FD /* steam_connection.c in Sources */,
 				76411692156BD468007DC4FD /* AISTPlugin.m in Sources */,
+				764116A2156BD716007DC4FD /* AISTService.m in Sources */,
+				764116A5156BD803007DC4FD /* AISTSteamAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +302,7 @@
 				);
 				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
 				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-undefined",
@@ -312,6 +329,7 @@
 				);
 				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
 				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-undefined",
