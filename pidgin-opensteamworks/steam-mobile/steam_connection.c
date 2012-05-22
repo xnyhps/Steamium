@@ -202,7 +202,7 @@ static void steam_connection_process_data(SteamConnection *steamcon)
 				purple_debug_info("steam", "executing callback for %s\n", steamcon->url);
 				steamcon->callback(steamcon->sa, jsonobj, steamcon->user_data);
 			}
-			g_object_unref(parser);
+			// g_object_unref(parser);
 		}
 	}
 

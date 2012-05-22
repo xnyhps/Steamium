@@ -7,19 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76411672156BCFD2007DC4FD /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411671156BCFD2007DC4FD /* libpurple.framework */; };
+		76411675156BCFDE007DC4FD /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411674156BCFDE007DC4FD /* Adium.framework */; };
+		76411678156BCFFE007DC4FD /* libjson-glib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411677156BCFFE007DC4FD /* libjson-glib.framework */; };
+		76411682156BD01D007DC4FD /* libsteam.c in Sources */ = {isa = PBXBuildFile; fileRef = 7641167D156BD01D007DC4FD /* libsteam.c */; };
+		76411683156BD01D007DC4FD /* steam_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = 7641167F156BD01D007DC4FD /* steam_connection.c */; };
+		76411685156BD031007DC4FD /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411684156BD031007DC4FD /* libglib.framework */; };
+		76411687156BD0ED007DC4FD /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76411686156BD0ED007DC4FD /* libintl.framework */; };
+		76411692156BD468007DC4FD /* AISTPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76411691156BD468007DC4FD /* AISTPlugin.m */; };
 		76848A88156BCDF1006D1E50 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76848A87156BCDF1006D1E50 /* Cocoa.framework */; };
 		76848A92156BCDF1006D1E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76848A90156BCDF1006D1E50 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76848A84156BCDF1006D1E50 /* Steamium.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Steamium.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		76411671156BCFD2007DC4FD /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = ../adium3/Frameworks/libpurple.framework; sourceTree = "<group>"; };
+		76411674156BCFDE007DC4FD /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = ../adium3/build/Debug/Adium.framework; sourceTree = "<group>"; };
+		76411677156BCFFE007DC4FD /* libjson-glib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "libjson-glib.framework"; path = "../adium3/Frameworks/libjson-glib.framework"; sourceTree = "<group>"; };
+		76411679156BD00F007DC4FD /* libsteamworks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = libsteamworks.cpp; path = "pidgin-opensteamworks/libsteamworks.cpp"; sourceTree = "<group>"; };
+		7641167A156BD00F007DC4FD /* libsteamworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libsteamworks.h; path = "pidgin-opensteamworks/libsteamworks.h"; sourceTree = "<group>"; };
+		7641167D156BD01D007DC4FD /* libsteam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libsteam.c; sourceTree = "<group>"; };
+		7641167E156BD01D007DC4FD /* libsteam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsteam.h; sourceTree = "<group>"; };
+		7641167F156BD01D007DC4FD /* steam_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = steam_connection.c; sourceTree = "<group>"; };
+		76411680156BD01D007DC4FD /* steam_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = steam_connection.h; sourceTree = "<group>"; };
+		76411684156BD031007DC4FD /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = ../adium3/Frameworks/libglib.framework; sourceTree = "<group>"; };
+		76411686156BD0ED007DC4FD /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = ../adium3/Frameworks/libintl.framework; sourceTree = "<group>"; };
+		76411690156BD468007DC4FD /* AISTPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AISTPlugin.h; path = Source/AISTPlugin.h; sourceTree = SOURCE_ROOT; };
+		76411691156BD468007DC4FD /* AISTPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AISTPlugin.m; path = Source/AISTPlugin.m; sourceTree = SOURCE_ROOT; };
+		76848A84156BCDF1006D1E50 /* Steamium.adiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Steamium.adiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		76848A87156BCDF1006D1E50 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76848A8A156BCDF1006D1E50 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		76848A8B156BCDF1006D1E50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		76848A8C156BCDF1006D1E50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		76848A8F156BCDF1006D1E50 /* Steamium-Info.plist */ = {isa = PBXFileReference; path = "Steamium-Info.plist"; sourceTree = "<group>"; };
+		76848A8F156BCDF1006D1E50 /* Steamium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Steamium-Info.plist"; sourceTree = "<group>"; };
 		76848A91156BCDF1006D1E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		76848A93156BCDF1006D1E50 /* Steamium-Prefix.pch */ = {isa = PBXFileReference; path = "Steamium-Prefix.pch"; sourceTree = "<group>"; };
+		76848A93156BCDF1006D1E50 /* Steamium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Steamium-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,15 +49,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				76848A88156BCDF1006D1E50 /* Cocoa.framework in Frameworks */,
+				76411672156BCFD2007DC4FD /* libpurple.framework in Frameworks */,
+				76411675156BCFDE007DC4FD /* Adium.framework in Frameworks */,
+				76411678156BCFFE007DC4FD /* libjson-glib.framework in Frameworks */,
+				76411685156BD031007DC4FD /* libglib.framework in Frameworks */,
+				76411687156BD0ED007DC4FD /* libintl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76411676156BCFED007DC4FD /* pidgin-opensteamworks */ = {
+			isa = PBXGroup;
+			children = (
+				76411679156BD00F007DC4FD /* libsteamworks.cpp */,
+				7641167A156BD00F007DC4FD /* libsteamworks.h */,
+				7641167B156BD01D007DC4FD /* steam-mobile */,
+			);
+			name = "pidgin-opensteamworks";
+			sourceTree = "<group>";
+		};
+		7641167B156BD01D007DC4FD /* steam-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				7641167D156BD01D007DC4FD /* libsteam.c */,
+				7641167E156BD01D007DC4FD /* libsteam.h */,
+				7641167F156BD01D007DC4FD /* steam_connection.c */,
+				76411680156BD01D007DC4FD /* steam_connection.h */,
+			);
+			name = "steam-mobile";
+			path = "pidgin-opensteamworks/steam-mobile";
+			sourceTree = "<group>";
+		};
 		76848A79156BCDF1006D1E50 = {
 			isa = PBXGroup;
 			children = (
+				76411676156BCFED007DC4FD /* pidgin-opensteamworks */,
 				76848A8D156BCDF1006D1E50 /* Steamium */,
 				76848A86156BCDF1006D1E50 /* Frameworks */,
 				76848A85156BCDF1006D1E50 /* Products */,
@@ -46,7 +95,7 @@
 		76848A85156BCDF1006D1E50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76848A84156BCDF1006D1E50 /* Steamium.bundle */,
+				76848A84156BCDF1006D1E50 /* Steamium.adiumLibpurplePlugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +103,11 @@
 		76848A86156BCDF1006D1E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76411686156BD0ED007DC4FD /* libintl.framework */,
+				76411684156BD031007DC4FD /* libglib.framework */,
+				76411677156BCFFE007DC4FD /* libjson-glib.framework */,
+				76411674156BCFDE007DC4FD /* Adium.framework */,
+				76411671156BCFD2007DC4FD /* libpurple.framework */,
 				76848A87156BCDF1006D1E50 /* Cocoa.framework */,
 				76848A89156BCDF1006D1E50 /* Other Frameworks */,
 			);
@@ -74,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				76848A8E156BCDF1006D1E50 /* Supporting Files */,
+				76411690156BD468007DC4FD /* AISTPlugin.h */,
+				76411691156BD468007DC4FD /* AISTPlugin.m */,
 			);
 			path = Steamium;
 			sourceTree = "<group>";
@@ -105,7 +161,7 @@
 			);
 			name = Steamium;
 			productName = Steamium;
-			productReference = 76848A84156BCDF1006D1E50 /* Steamium.bundle */;
+			productReference = 76848A84156BCDF1006D1E50 /* Steamium.adiumLibpurplePlugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -149,6 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76411682156BD01D007DC4FD /* libsteam.c in Sources */,
+				76411683156BD01D007DC4FD /* steam_connection.c in Sources */,
+				76411692156BD468007DC4FD /* AISTPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,9 +245,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -206,32 +265,60 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		76848A97156BCDF1006D1E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"\"$(SRCROOT)/../adium3/build/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Steamium/Steamium-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../adium3/Frameworks/libglib.framework/Headers\"",
+					"\"$(SRCROOT)/../adium3/Frameworks/libjson-glib.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = adiumLibpurplePlugin;
 			};
 			name = Debug;
 		};
 		76848A98156BCDF1006D1E50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"\"$(SRCROOT)/../adium3/build/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Steamium/Steamium-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../adium3/Frameworks/libglib.framework/Headers\"",
+					"\"$(SRCROOT)/../adium3/Frameworks/libjson-glib.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = adiumLibpurplePlugin;
 			};
 			name = Release;
 		};
@@ -254,6 +341,7 @@
 				76848A98156BCDF1006D1E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

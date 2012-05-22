@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Adium/AIPlugin.h>
 
-@interface AISTPlugin : AIPlugin
+@interface AISTPlugin : NSObject <AIPlugin>
 
 @end

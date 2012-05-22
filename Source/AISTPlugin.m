@@ -7,7 +7,18 @@
 //
 
 #import "AISTPlugin.h"
+#import <Adium/ESDebugAILog.h>
 
 @implementation AISTPlugin
+
+- (void)installPlugin
+{
+	AILogWithSignature(@"Loaded");
+}
+
+- (void)uninstallPlugin
+{
+	
+}
 
 @end
