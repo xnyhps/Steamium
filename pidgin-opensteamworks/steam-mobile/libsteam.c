@@ -1,4 +1,18 @@
-
+/* 
+ * Steamium is the legal property of its developers, whose names are listed in the copyright file included
+ * with this source distribution.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+ * General Public License as published by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+ * the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+ * Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along with this program; if not,
+ * write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ */
 
 #include "libsteam.h"
 #include "steam_connection.h"
@@ -973,8 +987,12 @@ steam_blist_view_profile(PurpleBlistNode *node, gpointer data)
 	if (!buddy)
 		return;
 	sbuddy = buddy->proto_data;
-	if (!sbuddy || !sbuddy->profileurl)
+	if (!sbuddy || !sbuddy->profileurl) {
+		purple_debug_info("steam", "Profile URL not found\n");
 		return;
+	}
+	
+	purple_debug_info("steam", "Profile URL: %s\n", sbuddy->profileurl);
 	
 	purple_notify_uri(handle, sbuddy->profileurl);
 }
