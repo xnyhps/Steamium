@@ -26,5 +26,7 @@
 	<string>Copyright © 2012 __MyCompanyName__. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>AIMinimumAdiumVersionRequirement</key>
+	<string>1.5</string>
 </dict>
 </plist>
