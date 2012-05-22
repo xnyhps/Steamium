@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76848A88156BCDF1006D1E50 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76848A87156BCDF1006D1E50 /* Cocoa.framework */; };
+		76848A92156BCDF1006D1E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76848A90156BCDF1006D1E50 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76848A84156BCDF1006D1E50 /* Steamium.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Steamium.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		76848A87156BCDF1006D1E50 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		76848A8A156BCDF1006D1E50 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		76848A8B156BCDF1006D1E50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		76848A8C156BCDF1006D1E50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76848A8F156BCDF1006D1E50 /* Steamium-Info.plist */ = {isa = PBXFileReference; path = "Steamium-Info.plist"; sourceTree = "<group>"; };
+		76848A91156BCDF1006D1E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76848A93156BCDF1006D1E50 /* Steamium-Prefix.pch */ = {isa = PBXFileReference; path = "Steamium-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76848A81156BCDF1006D1E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76848A88156BCDF1006D1E50 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76848A79156BCDF1006D1E50 = {
+			isa = PBXGroup;
+			children = (
+				76848A8D156BCDF1006D1E50 /* Steamium */,
+				76848A86156BCDF1006D1E50 /* Frameworks */,
+				76848A85156BCDF1006D1E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76848A85156BCDF1006D1E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76848A84156BCDF1006D1E50 /* Steamium.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76848A86156BCDF1006D1E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76848A87156BCDF1006D1E50 /* Cocoa.framework */,
+				76848A89156BCDF1006D1E50 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76848A89156BCDF1006D1E50 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76848A8A156BCDF1006D1E50 /* AppKit.framework */,
+				76848A8B156BCDF1006D1E50 /* CoreData.framework */,
+				76848A8C156BCDF1006D1E50 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		76848A8D156BCDF1006D1E50 /* Steamium */ = {
+			isa = PBXGroup;
+			children = (
+				76848A8E156BCDF1006D1E50 /* Supporting Files */,
+			);
+			path = Steamium;
+			sourceTree = "<group>";
+		};
+		76848A8E156BCDF1006D1E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76848A8F156BCDF1006D1E50 /* Steamium-Info.plist */,
+				76848A90156BCDF1006D1E50 /* InfoPlist.strings */,
+				76848A93156BCDF1006D1E50 /* Steamium-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76848A83156BCDF1006D1E50 /* Steamium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76848A96156BCDF1006D1E50 /* Build configuration list for PBXNativeTarget "Steamium" */;
+			buildPhases = (
+				76848A80156BCDF1006D1E50 /* Sources */,
+				76848A81156BCDF1006D1E50 /* Frameworks */,
+				76848A82156BCDF1006D1E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Steamium;
+			productName = Steamium;
+			productReference = 76848A84156BCDF1006D1E50 /* Steamium.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76848A7B156BCDF1006D1E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 76848A7E156BCDF1006D1E50 /* Build configuration list for PBXProject "Steamium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76848A79156BCDF1006D1E50;
+			productRefGroup = 76848A85156BCDF1006D1E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76848A83156BCDF1006D1E50 /* Steamium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76848A82156BCDF1006D1E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76848A92156BCDF1006D1E50 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76848A80156BCDF1006D1E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76848A90156BCDF1006D1E50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76848A91156BCDF1006D1E50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76848A94156BCDF1006D1E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		76848A95156BCDF1006D1E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76848A97156BCDF1006D1E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Steamium/Steamium-Prefix.pch";
+				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		76848A98156BCDF1006D1E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Steamium/Steamium-Prefix.pch";
+				INFOPLIST_FILE = "Steamium/Steamium-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76848A7E156BCDF1006D1E50 /* Build configuration list for PBXProject "Steamium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76848A94156BCDF1006D1E50 /* Debug */,
+				76848A95156BCDF1006D1E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76848A96156BCDF1006D1E50 /* Build configuration list for PBXNativeTarget "Steamium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76848A97156BCDF1006D1E50 /* Debug */,
+				76848A98156BCDF1006D1E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76848A7B156BCDF1006D1E50 /* Project object */;
+}
